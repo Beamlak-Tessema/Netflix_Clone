@@ -1,0 +1,48 @@
+.footer {
+  background-color: #000;
+  color: #757575;
+  padding: 40px 10%;
+  font-size: 14px;
+  font-family: 'Netflix Sans', Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-questions {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-lang select {
+  background: transparent;
+  border: 1px solid #757575;
+  color: #757575;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+}
+
+.footer-country {
+  font-size: 13px;
+}

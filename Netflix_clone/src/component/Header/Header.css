@@ -1,0 +1,109 @@
+.nf-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #000; /* Pure black background */
+}
+
+.nf-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nf-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nf-logo {
+  height: 28px;
+}
+
+.nf-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nf-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.nf-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nf-icon {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nf-kids {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.nf-profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Burger menu */
+.nf-burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nf-nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nf-nav.open {
+    display: flex;
+  }
+
+  .nf-burger {
+    display: flex;
+  }
+}
