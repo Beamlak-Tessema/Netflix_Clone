@@ -17,5 +17,5 @@ export default defineConfig({
       react: path.resolve("./node_modules/react"),
     },
   },
-  base: "/Netflix_Clone/",
+  base: "/Netflix_Clone",
 });
